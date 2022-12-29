@@ -8,7 +8,33 @@ function getPassword() {
         let randomNum = Math.floor(Math.random() * chars.length)
 
         pw += chars.substring(randomNum, randomNum + 1)
-        console.log(pw)
     }
-    document.getElementById("password").value = pw 
+    document.getElementById("password").value = pw
+
+    msgDiv.innerText = ''
+
 }
+
+const clearBtn = document.getElementById('clear')
+const input = document.getElementById('password')
+
+// clears input
+clearBtn.addEventListener("click", () => {
+   input.value = ''
+   msgDiv.innerText = ''
+
+})
+
+const inputBox = document.getElementById('input-box')
+const copyBtn = document.getElementById('copy-btn')
+const msgDiv = document.createElement('div')
+msgDiv.innerText = ''
+
+// copies new password to clipboard
+copyBtn.addEventListener('click', () => {
+  input.select()
+  document.execCommand('copy')
+  msgDiv.innerHTML = `<br>
+  Password copied to clipboard!`
+  copyBtn.append(msgDiv)
+})
