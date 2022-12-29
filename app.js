@@ -37,4 +37,8 @@ copyBtn.addEventListener('click', () => {
   msgDiv.innerHTML = `<br>
   Password copied to clipboard!`
   copyBtn.append(msgDiv)
+
+  if (input.value === '') {
+    msgDiv.innerHTML = ''
+  }
 })
