@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +9,31 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-<div class="input-box">
-    <h1>Random Password Generator</h1>
-    <h2> <br>Creates a secure, unique 16 character long password using upper and lowercase letters,
-        numbers and special chars. Use the 'Copy' button to copy password
-        straight to your clipboard for immediate use.
-    </h2>
-    <br>
-    <input type="text" placeholder="Generate Password.." id="password" readonly="">
-</div>
-<div class="buttons">
-    <button id="btn" onclick="getPassword()">
-    Go!
-    </button>
-    <button id="clear">
-      Clear
-    </button>
-    <div id="copy-btn">
-        <button id="copy">Copy Password</button>
+    <div class="input-box">
+        <h1>Secure Password <br>Generator App</h1>
+        <h2> <br>Creates a secure, unique 16 character long password using upper and lowercase letters,
+            numbers and special chars.<h2>
+                <br>
+                <h2>Use the 'Copy' button to copy password
+                    straight to your clipboard for immediate use.
+                </h2>
+                <br>
+                <input type="text" placeholder='Click "Go" to reveal password..' id="password" readonly="">
     </div>
-</div>
-<script src="app.js"></script>
+    <div class="buttons">
+        <button id="btn" onclick="getPassword()">
+            Go
+        </button>
+        <button id="clear">
+            Clear
+        </button>
+        <div id="copy-btn">
+            <button id="copy">Copy Password</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
+
 </html>
