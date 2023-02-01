@@ -1,3 +1,5 @@
+// Can only be viewed using 'Open with Live Server' 
+
 function getPassword() {
     const chars = '01234567QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm!@#$%^&*(){}?:"><+_'
     let pwLength = 16
